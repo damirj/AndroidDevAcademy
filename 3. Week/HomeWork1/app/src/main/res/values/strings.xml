@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">HomeWork1</string>
+    <string name="string_AboutMe">In west Philadelphia born and raised On the playground was where I spent most of my
+        days Chillin\' out maxin\' relaxin\' all cool
+    </string>
+    <string name="name">Damir Jurković</string>
+    <string name="occupation">Student</string>
+    <string name="contact_me">Contact me</string>
+    <string name="e_mail">E-mail:</string>
+    <string name="my_email">d.jurkovic@gmail.com</string>
+    <string name="about_me">About me</string>
+    <string name="education">Education</string>
+    <string name="ferit">Fakultet Elektrotehnike, Racunarstva i Informacijskih tehnologija</string>
+    <string name="experience">Experience</string>
+    <string name="experience_text">Not much</string>
+    <string name="projects">Projects</string>
+    <string name="project_text">I\'ve got some on my github /damirj</string>
+    <string name="language">Language</string>
+    <string name="language_text">Fluent in Latin</string>
+    <string name="other">Other</string>
+    <string name="other_text">hmmmmmmm</string>
+</resources>

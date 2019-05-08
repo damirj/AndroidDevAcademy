@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent" android:layout_width="match_parent"
+        android:background="#88A09E">
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/layoutBanner"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:paddingBottom="10dp">
+
+        <TextView
+                android:id="@+id/tvName"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ivProfilePic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="20dp"
+                android:textColor="#01190b"
+                android:layout_marginLeft="@dimen/leftMargin"/>
+
+        <TextView
+                android:id="@+id/tvOccupation"
+                app:layout_constraintTop_toBottomOf="@id/tvName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ivProfilePic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/occupation"
+                android:textSize="20dp"
+                android:textColor="#cee0d5"
+                android:layout_marginLeft="10dp"/>
+
+        <ImageView
+                app:layout_constraintStart_toEndOf="@id/tvName"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/ivProfilePic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mypicround"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/layoutContactMe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/layoutBanner">
+
+            <TextView
+                    android:id="@+id/tvTitleContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/contact_me"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:layout_marginTop="20dp"
+                    style="@style/Title"/>
+
+            <TextView
+                    android:id="@+id/tvEmailContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/e_mail"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleContact"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:textColor="#424B54"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/tvTextContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/tvEmailContact"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="@dimen/marginTop_text"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:text="@string/my_email"
+                    style="@style/Text"/>
+
+            <TextView
+                    android:id="@+id/tvTitleAbout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/tvTextContact"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/about_me"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:layout_marginTop="@dimen/marginTop"
+                    style="@style/Title"/>
+
+            <TextView
+                    android:id="@+id/tvTextAbout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleAbout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/marginTop_text"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:text="@string/string_AboutMe"
+                    style="@style/Text"/>
+
+            <TextView
+                    android:id="@+id/tvTitleEducation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/tvTextAbout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/education"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:layout_marginTop="@dimen/marginTop"
+                    style="@style/Title"/>
+
+            <TextView
+                    android:id="@+id/tvTextEducation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleEducation"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/marginTop_text"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:text="@string/ferit"
+                    style="@style/Text"/>
+
+            <TextView
+                    android:id="@+id/tvTitleExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvTextContact"
+                    android:text="@string/experience"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="60dp"
+                    style="@style/Title"/>
+
+            <TextView
+                    android:id="@+id/tvTextExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/tvTextContact"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleExperience"
+                    android:layout_marginTop="@dimen/marginTop_text"
+                    android:layout_marginLeft="60dp"
+                    android:text="@string/experience_text"
+                    style="@style/Text"/>
+
+            <TextView
+                    android:id="@+id/tvTitleProjects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTextEducation"
+                    android:text="@string/projects"
+                    style="@style/Title"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:layout_marginLeft="@dimen/leftMargin"/>
+
+            <TextView
+                    android:id="@+id/tvTextProjects"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleProjects"
+                    android:layout_marginTop="@dimen/marginTop_text"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:text="@string/project_text"
+                    style="@style/Text"/>
+
+            <TextView
+                    android:id="@+id/tvTitleLang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTextProjects"
+                    android:text="@string/language"
+                    style="@style/Title"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:layout_marginLeft="@dimen/leftMargin"/>
+
+            <TextView
+                    android:id="@+id/tvTextLang"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleLang"
+                    android:layout_marginTop="@dimen/marginTop_text"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:text="@string/language_text"
+                    style="@style/Text"/>
+
+
+            <TextView
+                    android:id="@+id/tvTitleOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTextLang"
+                    android:text="@string/other"
+                    style="@style/Title"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:layout_marginLeft="@dimen/leftMargin"/>
+
+            <TextView
+                    android:id="@+id/tvTextOther"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleOther"
+                    android:layout_marginTop="@dimen/marginTop_text"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:text="@string/other_text"
+                    style="@style/Text"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+
+
+
