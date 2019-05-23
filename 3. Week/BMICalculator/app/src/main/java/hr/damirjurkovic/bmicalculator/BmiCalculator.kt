@@ -53,6 +53,4 @@ class BmiCalculator(private val etHeight: EditText, private val etWeight: EditTe
 
     }
 
-
-
 }
