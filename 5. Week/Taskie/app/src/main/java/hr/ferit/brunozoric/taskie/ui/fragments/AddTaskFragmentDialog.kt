@@ -101,6 +101,5 @@ class AddTaskFragmentDialog: DialogFragment() {
         fun newInstance(): AddTaskFragmentDialog {
             return AddTaskFragmentDialog()
         }
-
     }
 }
