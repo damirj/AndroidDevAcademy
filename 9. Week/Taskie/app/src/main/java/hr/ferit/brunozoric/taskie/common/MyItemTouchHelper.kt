@@ -26,7 +26,6 @@ class MyItemTouchHelper(private val deleteIcon: Drawable) {
     }
 
     fun setUpItemTouchHelper(): ItemTouchHelper.SimpleCallback {
-        //deleteIcon = ContextCompat.getDrawable(context, R.drawable.ic_delete_sweep_black_24dp)!!
         return object: ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT){
             override fun onMove(recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder, target: RecyclerView.ViewHolder): Boolean {
                 return false
