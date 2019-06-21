@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/sortMenu"
+          android:title="@string/sort_menu"
+          app:showAsAction="never" >
+
+        <menu>
+            <item android:id="@+id/sortByPriority"
+                  android:title="@string/sort_by_priority"
+                  app:showAsAction="never" />
+
+            <item android:id="@+id/sortByDate"
+                  android:title="@string/sort_by_date"
+                  app:showAsAction="never" />
+
+        </menu>
+
+    </item>
+
+    <item android:id="@+id/deleteAllTasks"
+          android:title="@string/delete_all_tasks"
+          app:showAsAction="never" />
+
+    <item android:id="@+id/logout"
+          android:title="Logout"
+          app:showAsAction="never" />
+
+
+</menu>
